@@ -17,8 +17,6 @@ jobs:
     - run: ls -l
     - name: Makefile make
       run: qmake -o Makefile Calculator.pro
-    - name: configure
-      run: ./configure
     - name: make
       run: make
     - name: make check
