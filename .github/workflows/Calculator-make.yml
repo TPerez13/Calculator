@@ -10,6 +10,10 @@ jobs:
   compile:
     runs-on: ubuntu-20.04
     steps:
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v3
+      with:
+        version: '6.4.2'
     - name: Install qmake
       run: sudo apt-get install qt6-default
     - uses: actions/checkout@v3
