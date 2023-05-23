@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Install qmake
       run: sudo apt-get install qt5-default
+      run: pwd
+      run: ls -l
     - name: Makefile make
       run: qmake -o Makefile ../Calculator.pro
     - uses: actions/checkout@v3
