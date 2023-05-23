@@ -10,6 +10,8 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
+    - name: Install qmake
+      run: apt-get install qt5-qmake
     - name: Makefile make
       run: qmake -o Makefile Calculator.pro
     - uses: actions/checkout@v3
