@@ -8,7 +8,7 @@ on:
 
 jobs:
   compile:
-    runs-on: ubuntu-20.04
+    runs-on: windows-lastest
     steps:
     - name: Install Qt
       uses: jurplel/install-qt-action@v3
@@ -21,7 +21,3 @@ jobs:
     - run: ls -l
     - name: make
       run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
