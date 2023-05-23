@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - name: Install qmake
-      run: sudo apt-get install qt5-qmake
+      run: sudo apt-get install qt5-default
     - name: Makefile make
       run: qmake -o Makefile Calculator.pro
     - uses: actions/checkout@v3
