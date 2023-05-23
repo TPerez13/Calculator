@@ -8,10 +8,10 @@ on:
 
 jobs:
   compile:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
     - name: Install qmake
-      run: sudo apt-get install qt5-default
+      run: sudo apt-get install qt5-qmake
     - name: Makefile make
       run: qmake -o Makefile Calculator.pro
     - uses: actions/checkout@v3
