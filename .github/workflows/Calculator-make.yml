@@ -13,10 +13,10 @@ jobs:
     - name: Install qmake
       run: sudo apt-get install qt5-default
     - uses: actions/checkout@v3
-    - run: pwd
-    - run: ls -l
     - name: Makefile make
       run: qmake -o Makefile Calculator.pro
+    - run: pwd
+    - run: ls -l
     - name: make
       run: make
     - name: make check
