@@ -12,10 +12,15 @@ class Calculator : public QMainWindow
     Q_OBJECT
 
 public:
-    Calculator(QWidget *parent = nullptr);
+    explicit Calculator(QWidget *parent = nullptr);
     ~Calculator();
 
 private:
     Ui::Calculator *ui;
+private slots :
+    void NumPressed();
+    void MathButtonPressed();
+    void EqualButtonPressed();
+    void ChangeNumberSign();
 };
 #endif // CALCULATOR_H
