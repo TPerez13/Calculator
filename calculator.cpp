@@ -25,7 +25,7 @@ Calculator::Calculator(QWidget *parent)
         numButtons[i] = Calculator::findChild<QPushButton *>(butName);
         connect(numButtons[i],SIGNAL(released()),this,SLOT(NumPressed()));
     }
-
+    //cualquier comentario
     // Connect signals and slots for math buttons
         connect(ui->Add, SIGNAL(released()), this,
                 SLOT(MathButtonPressed()));
