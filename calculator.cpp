@@ -26,6 +26,7 @@ Calculator::Calculator(QWidget *parent)
         connect(numButtons[i],SIGNAL(released()),this,SLOT(NumPressed()));
     }
     //cualquier comentario
+    //cualquier comentario 2
     // Connect signals and slots for math buttons
         connect(ui->Add, SIGNAL(released()), this,
                 SLOT(MathButtonPressed()));
